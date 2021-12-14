@@ -7,20 +7,14 @@ const FeedbackOptions = ({ options, handleClick }) => {
   return (
     <ul>
       <li>
-        <button style={stile1} name={options} onClick={handleClick}>
+        <button
+          style={stile1}
+          name={options}
+          onClick={() => handleClick(options)}
+        >
           {options}
         </button>
       </li>
-      {/* <li>
-        <button name="neutral" onClick={handleClick}>
-          Нейтральный
-        </button>
-      </li>
-      <li>
-        <button name="bad" onClick={handleClick}>
-          Плохой
-        </button>
-      </li> */}
     </ul>
   );
 };
